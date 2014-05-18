@@ -6,10 +6,12 @@ app.service('timeService', function () {
 
   var times = [{
     id: 0,
-    time: 90
+    time: 90,
+    desc: "Begin brewing!"
   }, {
     id: 1,
-    time: 240
+    time: 240,
+    desc: "Stir and continue brewing"
   }]; 
 
   this.addTime = function (time) {

@@ -15,10 +15,6 @@ body {
   font-size: 1.6em;
 }
 
-#timerContainer {
-  text-align: center; 
-}
-
 #isReady {
 
 }
@@ -29,16 +25,28 @@ body {
   font-weight: 100;
 }
 
+#timer_container {
+  margin: 1em 0 0 0;
+}
+
 .timer {
   font-size: 1.4em;
-  margin: 1em auto;
-  width: 30%;
+  margin: 0 auto;
   padding: .2em 0 .5em 0;
   border-radius: 5px;
   background-color: rgba(44, 36, 3, 1);
-  opacity: .6;
+  opacity: .5;
   display: block;
   transition: all 0.5s ease;
+  border: 1px solid #000;
+}
+
+.counter {
+  font-size: 2em;
+  opacity: .5;
+  position: absolute;
+  left: 24px;
+  margin-top: -4px;
 }
 
 .timer:first-child, .timer:hover {
@@ -54,6 +62,12 @@ body {
 .timer p {
   margin: 0;
   padding: 0;
+}
+
+.timer .description {
+  font-size: .7em; 
+  font-weight: 300;
+  padding: .5em 0 .8em 0;
 }
 
 #startStop {

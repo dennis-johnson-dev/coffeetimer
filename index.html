@@ -10,7 +10,6 @@
 <body>
 
 <div class="container"  ng-controller="first">
-  <div class="row">
   <h1>Is my coffee ready yet?</h1>
   <div id="isReady" class="ng-cloak">
     <h2 ng-show="ready">Yes!</h2>
@@ -28,10 +27,11 @@
   </div>
   <div id="timer_container">
     <div class="timer" ng-repeat="time in times">
-      <p>{{ time.time }}</p>
+      <span class="counter">{{ $index + 1 }}</span>
+      <p>{{ time.time }} Seconds</p>
+      <p class="description">{{ time.desc }}</p>
       <button class="btn btn-info" ng-click="removeTime(time)">Delete Timer</button> 
     </div>
-  </div>
   </div>
 </div>
 
