@@ -1,0 +1,65 @@
+body {
+  background-color: #5A4906;
+  color: #fff;
+  text-align: center;
+}
+
+#addTime {
+  width: 200px; 
+  height: 33px;
+  color: #000;
+}
+
+.btn-primary {
+  padding: 10px 15px; 
+  font-size: 1.6em;
+}
+
+#timerContainer {
+  text-align: center; 
+}
+
+#isReady {
+
+}
+
+#currentTime {
+  margin: 1em; 
+  font-size: 1.8em;
+  font-weight: 100;
+}
+
+.timer {
+  font-size: 1.4em;
+  margin: 1em auto;
+  width: 30%;
+  padding: .2em 0 .5em 0;
+  border-radius: 5px;
+  background-color: rgba(44, 36, 3, 1);
+  opacity: .6;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.timer:first-child, .timer:hover {
+  opacity: 1;
+  background-color: rgba(44, 36, 3, .7);
+}
+
+.timer .btn-info {
+  padding: 5px 10px; 
+  font-size: 12px;
+}
+
+.timer p {
+  margin: 0;
+  padding: 0;
+}
+
+#startStop {
+  margin: 2em 0;
+}
+
+.nav, .pagination, .carousel, .panel-title a { 
+  cursor: pointer;
+}
